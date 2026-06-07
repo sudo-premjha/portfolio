@@ -94,9 +94,9 @@ window.PORTFOLIO_DATA = {
       "tech": ["AWS EKS", "Terraform", "Helm", "Fastly CDN", "Signal Sciences WAF", "Prometheus", "Grafana", "GCP"]
     },
     {
-      "name": "Land Registration Authority",
+      "name": "Government Registry Platform",
       "tag": "VMware Air-Gapped",
-      "description": "Secure, air-gapped multi-cluster Kubernetes platform for a government land registration authority with zero internet exposure.",
+      "description": "Secure, air-gapped multi-cluster Kubernetes platform for a government registry authority with zero internet exposure.",
       "highlights": [
         "Architected production-grade, multi-cluster RKE2 Kubernetes platform on VMware vSphere in a fully air-gapped, high-security environment.",
         "Engineered a Shared Services cluster with full toolchain: Jenkins, ArgoCD (GitOps), Harbor, and HashiCorp Vault.",
