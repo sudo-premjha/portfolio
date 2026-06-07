@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prem Jha — DevOps & Cloud Engineer</title>
+  <meta name="description" content="DevOps Engineer · Kubernetes · Multi-Cloud · DevSecOps · 5 Years Experience">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+</head>
+<body>
+
+<!-- ░░ NAVBAR ░░ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#hero">PJ<span class="logo-dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+</nav>
+
+<!-- ░░ HERO ░░ -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="grid-overlay"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+
+  <div class="hero-layout">
+    <!-- Left: Text -->
+    <div class="hero-text">
+      <div class="hero-badge" id="heroBadge">
+        <span class="badge-dot"></span>
+        <span id="badgeText">Open to Opportunities</span>
+      </div>
+      <h1 class="hero-name" id="heroName">Prem Jha</h1>
+      <div class="hero-title-wrap">
+        <span class="hero-title-static" id="heroTitleStatic"></span>
+      </div>
+      <div class="hero-type-wrap">
+        <span class="hero-type-prefix">Also: </span>
+        <span class="hero-type" id="heroType"></span><span class="cursor-blink">_</span>
+      </div>
+      <p class="hero-loc" id="heroLoc">📍 New Delhi, India</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View Projects <span>→</span></a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+      <div class="hero-socials" id="heroSocials"></div>
+    </div>
+
+    <!-- Right: Terminal -->
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <div class="terminal-dots">
+          <span class="tdot tdot-r"></span>
+          <span class="tdot tdot-y"></span>
+          <span class="tdot tdot-g"></span>
+        </div>
+        <span class="terminal-title">prem@devops:~</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+  </div>
+
+  <!-- Tech Ticker -->
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+</section>
+
+<!-- ░░ STATS ░░ -->
+<section id="stats">
+  <div class="stats-grid" id="statsGrid"></div>
+</section>
+
+<!-- ░░ ABOUT ░░ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">01 — Who I Am</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p id="aboutSummary"></p>
+        <div class="about-tags" id="aboutTags"></div>
+      </div>
+      <div class="about-card reveal">
+        <div class="acard-glow"></div>
+        <div class="quick-item"><span class="qi-icon">🏢</span><div><strong>Current</strong><span id="quickCompany"></span></div></div>
+        <div class="quick-item"><span class="qi-icon">📍</span><div><strong>Location</strong><span id="quickLocation"></span></div></div>
+        <div class="quick-item"><span class="qi-icon">🎓</span><div><strong>Degree</strong><span>B.Tech CSE — MDU</span></div></div>
+        <div class="quick-item"><span class="qi-icon">📧</span><div><strong>Email</strong><a id="quickEmail" href=""></a></div></div>
+        <div class="quick-item"><span class="qi-icon">📱</span><div><strong>Phone</strong><a id="quickPhone" href=""></a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ SKILLS ░░ -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">02 — What I Use</span>
+      <h2 class="section-title">Technical Skills</h2>
+    </div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+</section>
+
+<!-- ░░ EXPERIENCE ░░ -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">03 — Where I've Worked</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ░░ PROJECTS ░░ -->
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">04 — What I've Built</span>
+      <h2 class="section-title">Key Projects</h2>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<!-- ░░ CERTIFICATIONS ░░ -->
+<section id="certifications" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">05 — Credentials</span>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+    <div class="certs-grid" id="certsGrid"></div>
+  </div>
+</section>
+
+<!-- ░░ CONTACT ░░ -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <div class="contact-center reveal">
+      <span class="section-label">06 — Say Hello</span>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="contact-intro">Open to full-time roles, freelance projects, and interesting collaborations.</p>
+      <div class="contact-links" id="contactLinks"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ FOOTER ░░ -->
+<footer id="footer">
+  <div class="footer-inner">
+    <span class="footer-logo">PJ<span class="logo-dot">.</span></span>
+    <span id="footerText"></span>
+  </div>
+  <div id="adminTrigger" style="position:absolute;bottom:0;right:0;width:48px;height:48px;cursor:default;"></div>
+</footer>
+
+<!-- ░░ LOGIN MODAL ░░ -->
+<div id="loginModal" class="modal-overlay hidden">
+  <div class="modal-box">
+    <button class="modal-close" id="loginClose">✕</button>
+    <div class="modal-icon">🔐</div>
+    <h3>Admin Access</h3>
+    <p class="modal-sub">You are on localhost — click Login to enter.</p>
+    <div id="loginError" class="modal-error hidden"></div>
+    <button class="btn btn-primary btn-full" id="loginBtn">Enter Admin Panel</button>
+  </div>
+</div>
+
+<!-- ░░ ADMIN PANEL ░░ -->
+<div id="adminPanel" class="admin-panel hidden">
+  <div class="admin-header">
+    <span>⚙ Admin Panel</span>
+    <button id="adminClose">✕</button>
+  </div>
+  <div class="admin-tabs">
+    <button class="admin-tab active" data-tab="skill">Skill</button>
+    <button class="admin-tab" data-tab="project">Project</button>
+    <button class="admin-tab" data-tab="cert">Cert</button>
+    <button class="admin-tab" data-tab="github">GitHub</button>
+  </div>
+  <div class="admin-content" id="tab-skill">
+    <label>Category</label>
+    <select id="skillCategory" class="admin-input"></select>
+    <label>New Category (optional)</label>
+    <input type="text" id="newCategory" class="admin-input" placeholder="e.g. DevTools">
+    <label>Skill Name</label>
+    <input type="text" id="newSkillName" class="admin-input" placeholder="e.g. ArgoCD">
+    <button class="btn btn-primary btn-full" id="addSkillBtn">+ Add Skill</button>
+  </div>
+  <div class="admin-content hidden" id="tab-project">
+    <label>Project Name</label>
+    <input type="text" id="projName" class="admin-input" placeholder="Project name">
+    <label>Tag / Platform</label>
+    <input type="text" id="projTag" class="admin-input" placeholder="e.g. AWS Multi-Cloud">
+    <label>Description</label>
+    <textarea id="projDesc" class="admin-input admin-textarea" placeholder="Brief description"></textarea>
+    <label>Tech Stack (comma separated)</label>
+    <input type="text" id="projTech" class="admin-input" placeholder="Terraform, Kubernetes, AWS EKS">
+    <label>Highlight 1</label>
+    <input type="text" id="projH1" class="admin-input" placeholder="Key achievement">
+    <label>Highlight 2</label>
+    <input type="text" id="projH2" class="admin-input" placeholder="Key achievement">
+    <button class="btn btn-primary btn-full" id="addProjectBtn">+ Add Project</button>
+  </div>
+  <div class="admin-content hidden" id="tab-cert">
+    <label>Certification Name</label>
+    <input type="text" id="certName" class="admin-input" placeholder="e.g. AWS Solutions Architect">
+    <label>Code</label>
+    <input type="text" id="certCode" class="admin-input" placeholder="e.g. SAA-C03">
+    <label>Issuer</label>
+    <input type="text" id="certIssuer" class="admin-input" placeholder="e.g. Amazon Web Services">
+    <label>Date Earned</label>
+    <input type="text" id="certEarned" class="admin-input" placeholder="e.g. June 2025">
+    <label>Verify URL</label>
+    <input type="text" id="certUrl" class="admin-input" placeholder="https://...">
+    <button class="btn btn-primary btn-full" id="addCertBtn">+ Add Cert</button>
+  </div>
+  <div class="admin-content hidden" id="tab-github">
+    <p class="admin-note">Enter your GitHub PAT (with <code>repo</code> scope) to push changes. Stored in session only.</p>
+    <label>GitHub Personal Access Token</label>
+    <input type="password" id="githubToken" class="admin-input" placeholder="ghp_xxxxxxxxxxxx">
+    <button class="btn btn-primary btn-full" id="saveToGithubBtn">💾 Save to GitHub</button>
+    <div id="syncStatus" class="sync-status hidden"></div>
+  </div>
+  <div id="adminMsg" class="admin-msg hidden"></div>
+</div>
+<button id="adminFab" class="admin-fab hidden" title="Admin Panel">⚙</button>
+
+<script src="data.js"></script>
+<script src="config.js"></script>
+<script src="admin.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
